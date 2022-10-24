@@ -1,10 +1,7 @@
 import React from 'react';
 import './app.scss';
 import { Helper } from './components/Helper/Help';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import { AnimatedTitle } from './components/TitleAnimated';
-AOS.init();
 
 const App = () => {
 	return (
@@ -572,17 +569,7 @@ const App = () => {
 							</div>
 						</div>
 					</li>
-					<div
-						className="container-text"
-						data-aos="fade-up"
-						data-aos-offset="200"
-						data-aos-delay="50"
-						data-aos-duration="500"
-						data-aos-easing="ease-in-out"
-						data-aos-mirror="true"
-						data-aos-once="true"
-						data-aos-anchor-placement="top-center"
-					>
+					<div>
 						<AnimatedTitle title={'Referencias'} />
 
 						<ul className="list-apresentationn">
