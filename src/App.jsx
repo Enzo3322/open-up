@@ -1,20 +1,24 @@
 import React from 'react';
 import './app.scss';
 import { Helper } from './components/Helper/Help';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { AnimatedTitle } from './components/TitleAnimated';
+AOS.init();
 
 const App = () => {
 	return (
 		<div className="container">
 			<Helper />
 			<div className="header" id="step0">
-				<h1>Open Up</h1>
-				<p>Processo Unificado Aberto</p>
+				<video src="./video5.mp4" autoPlay loop muted />
+				<h1>
+					Open Up <br /> <br /> Processo Unificado Aberto
+				</h1>
 			</div>
 			<div className="container-text" id="step1">
-				<div className="apresentation">
-					<h2>Apresentação</h2>
-				</div>
-				<div className="">
+				<AnimatedTitle title={'Apresentação'} />
+				<div>
 					<ul className="list-apresentation">
 						<li>
 							<p>Surgimento</p>
@@ -38,9 +42,8 @@ const App = () => {
 				</div>
 			</div>
 			<div className="container-text" id="step2">
-				<div className="apresentation">
-					<h2>Surgimento</h2>
-				</div>
+				<AnimatedTitle title={'Surgimento'} />
+
 				<ul className="list-apresentationn">
 					<li>
 						<p>
@@ -73,9 +76,8 @@ const App = () => {
 				</ul>
 			</div>
 			<div className="container-text" id="step3">
-				<div className="apresentation">
-					<h2>Conceitos</h2>
-				</div>
+				<AnimatedTitle title={'Conceitos'} />
+
 				<ul className="list-apresentationn">
 					<li>
 						<p>
@@ -95,9 +97,8 @@ const App = () => {
 				</ul>
 			</div>
 			<div className="container-text" id="step4">
-				<div className="apresentation">
-					<h2>Características</h2>
-				</div>
+				<AnimatedTitle title={'Características'} />
+
 				<ul className="list-apresentationn">
 					<li>
 						<p>
@@ -119,9 +120,8 @@ const App = () => {
 				</ul>
 			</div>
 			<div className="container-text" id="step5">
-				<div className="apresentation">
-					<h2>Princípios Básicos</h2>
-				</div>
+				<AnimatedTitle title={'Princípios Básicos'} />
+
 				<ul className="list-apresentationn">
 					<li>
 						<p>
@@ -203,9 +203,8 @@ const App = () => {
 				</ul>
 			</div>
 			<div className="container-text" id="step6">
-				<div className="apresentation">
-					<h2>Papéis no Open UP</h2>
-				</div>
+				<AnimatedTitle title={'Papéis no Open UP'} />
+
 				<ul className="list-apresentationn">
 					<li>
 						<p>Arquiteto:</p>
@@ -302,9 +301,8 @@ const App = () => {
 				</ul>
 			</div>
 			<div className="container-text" id="step7">
-				<div className="apresentation">
-					<h2>Estrutura Open UP</h2>
-				</div>
+				<AnimatedTitle title={'Estrutura Open UP'} />
+
 				<ul className="list-apresentationn">
 					<li>
 						<p>
@@ -323,9 +321,8 @@ const App = () => {
 				</ul>
 			</div>
 			<div className="container-text" id="step8">
-				<div className="apresentation">
-					<h2>1ª Camada - Ciclo de vida de Projeto</h2>
-				</div>
+				<AnimatedTitle title={'1ª Camada - Ciclo de vida do Projeto'} />
+
 				<ul className="list-apresentationn">
 					<li>
 						<p>
@@ -395,9 +392,8 @@ const App = () => {
 				</ul>
 			</div>
 			<div className="container-text" id="step9">
-				<div className="apresentation">
-					<h2>2ª Camada - Ciclo de Iteração </h2>
-				</div>
+				<AnimatedTitle title={'2ª Camada - Ciclo de Iteração'} />
+
 				<ul className="list-apresentationn">
 					<li>
 						<p>
@@ -441,9 +437,8 @@ const App = () => {
 				</ul>
 			</div>
 			<div className="container-text" id="step10">
-				<div className="apresentation">
-					<h2>3ª Camada - Ciclo de Micro Incremento</h2>
-				</div>
+				<AnimatedTitle title={'3ª Camada - Ciclo de Micro Incremento'} />
+
 				<ul className="list-apresentationn">
 					<li>
 						<p>Foco no Individual;</p>
@@ -477,9 +472,8 @@ const App = () => {
 				</ul>
 			</div>
 			<div className="container-text" id="step11">
-				<div className="apresentation">
-					<h2>Disciplinas do Open UP</h2>
-				</div>
+				<AnimatedTitle title={'Disciplinas do Open UP'} />
+
 				<ul className="list-apresentationn">
 					<li>
 						<p>
@@ -589,32 +583,21 @@ const App = () => {
 						data-aos-once="true"
 						data-aos-anchor-placement="top-center"
 					>
-						<div className="apresentation">
-							<h2>Referencias</h2>
-						</div>
+						<AnimatedTitle title={'Referencias'} />
+
 						<ul className="list-apresentationn">
 							<li>
-								<div className="ref">
-									<a href="https://pt.wikipedia.org/wiki/OpenUP">Wikipedia</a>
-								</div>
+								<a href="https://pt.wikipedia.org/wiki/OpenUP">Wikipedia</a>
 							</li>
 
 							<li>
-								<div className="ref">
-									<a href="http://open2up.blogspot.com/">Open2Up</a>
-								</div>
+								<a href="http://open2up.blogspot.com/">Open2Up</a>
 							</li>
 							<li>
-								<div className="ref">
-									<a href="https://www.cin.ufpe.br/~tg/2006-2/ceac.pdf">UFPE</a>
-								</div>
+								<a href="https://www.cin.ufpe.br/~tg/2006-2/ceac.pdf">UFPE</a>
 							</li>
 							<li>
-								<div className="ref">
-									<a href="https://www.tiespecialistas.com.br/openup-uma-visao-geral/">
-										Tiespecialistas
-									</a>
-								</div>
+								<a href="https://www.tiespecialistas.com.br/openup-uma-visao-geral/"></a>
 							</li>
 						</ul>
 					</div>

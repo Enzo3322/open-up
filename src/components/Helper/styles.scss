@@ -13,6 +13,7 @@
 	top: 20px;
 	right: 20px;
 	display: flex;
+	z-index: 9999;
 	button {
 		background-color: #000;
 		padding: 10px;
@@ -25,6 +26,16 @@
 		cursor: pointer;
 		svg {
 			fill: #fff;
+		}
+	}
+}
+
+@media (max-width: 40rem) {
+	.fixed {
+		flex-direction: column;
+		right: 0;
+		button {
+			margin-bottom: 10px;
 		}
 	}
 }

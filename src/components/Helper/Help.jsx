@@ -2,14 +2,10 @@ import { useEffect, useState } from 'react';
 import {
 	BsFillArrowLeftCircleFill,
 	BsFillArrowRightCircleFill,
-	BsFillMoonFill,
-	BsFillSunFill,
 } from 'react-icons/bs';
 import './styles.scss';
 
 export const Helper = () => {
-	const [lightMode, setLightMode] = useState(true);
-
 	const [step, setStep] = useState(0);
 
 	const handleStep = (action) => {
@@ -30,20 +26,8 @@ export const Helper = () => {
 		console.log(step);
 	}, [step]);
 
-	useEffect(() => {
-		const body = document.querySelector('body');
-		if (!lightMode) {
-			body.classList.add('dark');
-		} else {
-			body.classList.remove('dark');
-		}
-	}, [lightMode]);
-
 	return (
 		<div className="fixed">
-			<button onClick={() => setLightMode(!lightMode)}>
-				{lightMode ? <BsFillMoonFill /> : <BsFillSunFill />}
-			</button>
 			<button
 				onClick={() => {
 					handleStep();
