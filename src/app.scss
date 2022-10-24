@@ -1,0 +1,166 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #111;
+	font-family: 'Inter';
+	transition: all 0.4s ease;
+}
+
+body,
+html {
+	background-color: #fff;
+}
+
+body.dark {
+	background-color: #222;
+	* {
+		color: #fff !important;
+	}
+}
+h1,
+h2,
+h3,
+h4 {
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: 2.25rem;
+}
+
+h3 {
+	font-size: 1.75rem;
+}
+
+li,
+p {
+	font-size: 22px;
+	line-height: 1.6em;
+}
+
+img {
+	max-width: 100%;
+}
+
+.container {
+	width: 100%;
+	max-width: 1230px;
+	margin: 0 auto;
+	.header {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100vh;
+		h1 {
+			margin-bottom: 50px;
+			color: #111;
+		}
+		p {
+		}
+	}
+	.container-text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		min-height: 100vh;
+		h2 {
+			margin: 30px;
+		}
+		.list-apresentation {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding: 50px;
+			li {
+				text-transform: uppercase;
+				list-style: disc;
+				margin-bottom: 15px;
+			}
+		}
+	}
+	.list-apresentationn {
+		display: flex;
+		flex-direction: column;
+		padding: 0 30px 30px 30px;
+		li {
+			display: flex;
+			align-items: center;
+			margin-bottom: 10px;
+		}
+	}
+	.container-desc {
+		display: flex;
+		flex-direction: column;
+		margin-left: 50px;
+	}
+	.container-iten {
+		display: flex;
+		align-items: center;
+	}
+	.image-stack {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 25px 0 25px 0;
+		// width: 800px;
+		img {
+			border-radius: 20px;
+			border: solid 2px black;
+		}
+	}
+	.img-camadas {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 0 5rem 0;
+		img {
+			border-radius: 20px;
+			border: solid 2px black;
+		}
+	}
+	.ref a {
+		width: 100%;
+		height: auto;
+		cursor: pointer;
+		text-decoration: none;
+		color: black;
+		&:hover {
+			color: white;
+		}
+	}
+}
+@media screen and (max-width: 500px) {
+	.header p {
+		text-align: center;
+	}
+	img {
+		width: 100%;
+	}
+	.ref {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: auto;
+	}
+	.ref a {
+		width: 100%;
+		height: auto;
+		cursor: pointer;
+		text-decoration: none;
+		color: black;
+		&:hover {
+			color: white;
+		}
+	}
+}
