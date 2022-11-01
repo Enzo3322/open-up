@@ -569,7 +569,10 @@ const App = () => {
 							</div>
 						</div>
 					</li>
-					<div>
+					
+				</ul>
+			</div>
+			<div className="container-text" id="step12">
 						<AnimatedTitle title={'Referencias'} />
 
 						<ul className="list-apresentationn">
@@ -588,8 +591,6 @@ const App = () => {
 							</li>
 						</ul>
 					</div>
-				</ul>
-			</div>
 		</div>
 	);
 };

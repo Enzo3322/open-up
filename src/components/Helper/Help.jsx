@@ -9,7 +9,7 @@ export const Helper = () => {
 	const [step, setStep] = useState(0);
 
 	const handleStep = (action) => {
-		const maxStep = 11;
+		const maxStep = 12;
 		if (action === '>') {
 			if (step < maxStep) {
 				setStep(step + 1);
